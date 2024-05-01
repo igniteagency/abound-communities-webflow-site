@@ -1,1 +1,1 @@
-"use strict";(()=>{})();
+"use strict";(()=>{var c=".navbar_component",e="is-scrolled",r=document.querySelector('[data-el="nav-scroll-pos"]'),o=document.querySelector(c);function l(){if(!r||!o){window.DEBUG("pageWrapper or nav not found");return}window.DEBUG("scrollHandler"),new IntersectionObserver(s=>{s[0].isIntersecting?o.classList.remove(e):o.classList.add(e)},{root:null,threshold:0}).observe(r)}var n;(n=window.Webflow)==null||n.push(()=>{l()});})();
