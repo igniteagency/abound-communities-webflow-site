@@ -1,17 +1,11 @@
-import { ELEMENT_SELECTOR_DATA_ATTR_NAME } from 'src/constants';
-
 export function initFontSizeController() {
   const baseSize = 16;
   let currentSize = baseSize;
 
   const changeDifference = 3;
 
-  const increaseTriggerEl = document.querySelector(
-    `[${ELEMENT_SELECTOR_DATA_ATTR_NAME}="font-size-increase"]`
-  );
-  const decreaseTriggerEl = document.querySelector(
-    `[${ELEMENT_SELECTOR_DATA_ATTR_NAME}="font-size-decrease"]`
-  );
+  const increaseTriggerEl = document.querySelector(`[data-el="font-size-increase"]`);
+  const decreaseTriggerEl = document.querySelector(`[data-el="font-size-decrease"]`);
 
   if (!increaseTriggerEl || !decreaseTriggerEl) {
     window.DEBUG('increaseTriggerEl or decreaseTriggerEl not found');
