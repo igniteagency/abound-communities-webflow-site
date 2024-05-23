@@ -21,21 +21,21 @@ export function initFontSizeController() {
 
   increaseTriggerEl.addEventListener('click', () => {
     const newSize = currentSize + changeDifference;
-    updateFontSize(newSize);
+    updateFontSize(newSize, currentSize);
     currentSize = newSize;
   });
 
   decreaseTriggerEl.addEventListener('click', () => {
     const newSize = currentSize - changeDifference;
-    updateFontSize(newSize);
+    updateFontSize(newSize, currentSize);
     currentSize = newSize;
   });
 }
 
-function updateFontSize(px: number) {
-  if (px < 13) {
-    window.DEBUG("Base value is 13. Can't go any smaller.");
+function updateFontSize(newSize: number, currentSize: number) {
+  if (newSize < 13 || newSize > 27) {
+    window.DEBUG(`Limit hit. Current font size is ${currentSize}`);
     return;
   }
-  document.documentElement.style.fontSize = px + 'px';
+  document.documentElement.style.fontSize = newSize + 'px';
 }
