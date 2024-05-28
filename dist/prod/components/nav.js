@@ -1,1 +1,0 @@
-"use strict";(()=>{var l=".navbar_component",o="is-scrolled",r=document.querySelector('[data-el="nav-scroll-pos"]'),e=document.querySelector(l);function t(){if(!r||!e){window.DEBUG("pageWrapper or nav not found");return}window.DEBUG("scrollHandler"),new IntersectionObserver(n=>{n[0].isIntersecting?e.classList.remove(o):e.classList.add(o)},{root:null,threshold:0}).observe(r)}})();
