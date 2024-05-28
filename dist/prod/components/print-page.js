@@ -1,0 +1,1 @@
+"use strict";(()=>{function r(){let n=document.querySelector('[data-el="print-trigger"]');if(!n){window.DEBUG("printTriggerEl not found"),window.DEBUG({printTriggerEl:n});return}n.addEventListener("click",()=>{window.print()})}})();
