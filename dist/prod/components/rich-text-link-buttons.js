@@ -1,0 +1,1 @@
+"use strict";(()=>{function i(){document.querySelectorAll(".text-rich-text > p").forEach(e=>{let t=e.firstChild;e.childNodes.length!==1||!t||t.nodeType!==Node.ELEMENT_NODE||t.tagName!=="A"||t.classList.add("button","is-secondary","is-small","is-inline","w-button")})}})();
