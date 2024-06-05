@@ -1,9 +1,9 @@
 const SLIDE_Y_VALUE = 50;
 
 const FADE_ATTR = 'data-fade';
-const FADE_STAGGER_ATTR = 'data-fade-stagger';
 const FADE_ATTR_STILL_VALUE = 'still';
 const FADE_DELAY_ATTR = 'data-fade-delay-ms';
+const FADE_STAGGER_ATTR = 'data-fade-stagger';
 const FADE_STAGGER_DELAY_ATTR = 'data-fade-stagger-delay-ms';
 
 const FADE_DEFAULT_STAGGER_DELAY_MS = 150;
@@ -21,7 +21,7 @@ const FADE_DEFAULT_STAGGER_DELAY_MS = 150;
 export function fadeUp() {
   const fadeUpElList = document.querySelectorAll(`[${FADE_ATTR}]`);
   fadeUpElList.forEach((el) => {
-    const isStagger = el.getAttribute(FADE_STAGGER_ATTR) ? true : false;
+    const isStagger = null !== el.getAttribute(FADE_STAGGER_ATTR) ? true : false;
     const isStill = FADE_ATTR_STILL_VALUE === el.getAttribute(FADE_ATTR) ? true : false;
     const delayValue = el.getAttribute(FADE_DELAY_ATTR);
     const delay = delayValue ? Number(delayValue) / 1000 : false;
@@ -63,7 +63,7 @@ function fadeUpAnimation(
       start: 'top 85%',
       toggleActions: 'play none none none',
       markers: window.IS_DEBUG_MODE,
-      id: 'fade-up',
+      id: 'fade',
     },
   });
 }
