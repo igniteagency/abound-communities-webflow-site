@@ -1,4 +1,4 @@
-const SLIDE_Y_VALUE = 20;
+const SLIDE_Y_VALUE = 50;
 
 const FADE_ATTR = 'data-fade';
 const FADE_STAGGER_ATTR = 'data-fade-stagger';
@@ -54,7 +54,7 @@ function fadeUpAnimation(
   window.gsap.to(el, {
     y: 0,
     autoAlpha: 1,
-    duration: 0.6,
+    duration: 1,
     ease: 'power2.out',
     stagger: stagger ? staggerDelayValue : 0,
     delay: delay || 0,
