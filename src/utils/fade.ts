@@ -1,9 +1,9 @@
 const SLIDE_Y_VALUE = 50;
 
 const FADE_ATTR = 'data-fade';
-const FADE_STAGGER_ATTR = 'data-fade-stagger';
 const FADE_ATTR_STILL_VALUE = 'still';
 const FADE_DELAY_ATTR = 'data-fade-delay-ms';
+const FADE_STAGGER_ATTR = 'data-fade-stagger';
 const FADE_STAGGER_DELAY_ATTR = 'data-fade-stagger-delay-ms';
 
 const FADE_DEFAULT_STAGGER_DELAY_MS = 150;
