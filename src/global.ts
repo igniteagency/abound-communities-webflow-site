@@ -2,6 +2,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import { fadeUp } from '$utils/fade';
+import { scaleDown } from '$utils/scale';
 
 import { initFontSizeController } from './components/font-size-controls';
 import { scrollHandler as navScrollHandler } from './components/nav-scroll';
@@ -21,4 +22,5 @@ window.Webflow?.push(() => {
   showRichTextSoloLinksAsButtons();
 
   fadeUp();
+  scaleDown();
 });
