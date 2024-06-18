@@ -4,7 +4,7 @@
 import { CURRENT_CSS_CLASS } from '@finsweet/ts-utils';
 
 window.Webflow?.push(() => {
-  setActiveQuicklinksMenu();
+  // setActiveQuicklinksMenu();
 });
 
 function setActiveQuicklinksMenu() {
